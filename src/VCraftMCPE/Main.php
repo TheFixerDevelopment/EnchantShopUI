@@ -16,7 +16,7 @@ use onebone\economyapi\EconomyAPI;
 
 class Main extends PluginBase implements Listener{
   
-  const COMMAND_NAME = "enchantui";
+  const COMMAND_NAME = "enchant";
   const FORM_API = "FormAPI";
   
   public $Enchants = [
@@ -134,7 +134,7 @@ class Main extends PluginBase implements Listener{
           if(!($data[0] == null )) {
           }
          });
-       $form->setTitle("Buy enchantment");
+       $form->setTitle("§6Void§bFactions§cPE §dEnchant Shop");
        $form->addSlider("Level", 1, 5, 1, -1);
        $form->sendToPlayer($player);
 	  

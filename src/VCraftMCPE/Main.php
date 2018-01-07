@@ -16,7 +16,7 @@ use onebone\economyapi\EconomyAPI;
 
 class Main extends PluginBase implements Listener{
   
-  const COMMAND_NAME = "enchant";
+  const COMMAND_NAME = "eshop";
   const FORM_API = "FormAPI";
   
   public $Enchants = [

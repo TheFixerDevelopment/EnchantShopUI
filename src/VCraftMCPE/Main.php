@@ -126,7 +126,16 @@ class Main extends PluginBase implements Listener{
  -         }
         $form->sendToPlayer($player);
   }
-  public function ShopForm(){
+  public function ShopForm( $player, $id){
+	  $api = $this->getServer()->getPluginManager()->getPlugin(self::FORM_API);
+        $form = $api->createCustomForm(function (Player $event, array $data) use ($id){
+            $player = $event->getPlayer();
+          if(!($data[0] == null )) {
+          }
+         });
+       $form->setTitle("Buy enchantment");
+       $form->addSlider("Level", 1, 5, 1, -1);
+       $form->sendToPlayer($player);
 	  
   }
 }

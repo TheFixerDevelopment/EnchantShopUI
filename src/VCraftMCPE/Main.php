@@ -6,8 +6,9 @@ use pocketmine\plugin\PluginBase;
 
 use pocketmine\utils\TextFormat;
 
-use pocketmine\item\Item;
 use pocketmine\item\enchantment\Enchantment;
+use pocketmine\item\enchantment\EnchantmentInstance;
+use pocketmine\item\Item;
 use pocketmine\event\Listener;
 use pocketmine\command\{Command,CommandSender, CommandExecutor, ConsoleCommandSender};
 use jojoe77777\FormAPI;
@@ -20,33 +21,33 @@ class Main extends PluginBase implements Listener{
   
   public $Enchants = [
     "EXIT" => [0],
-    "PROTECTION" => [],
-    "FIRE PROTECTION" => [],
-    "FEATHER FALLING" => [],
-    "BLAST PROTECTION" => [],
-	"PROJECTILE PROTECTION" => [],
-	"THORNS" => [],
-	"RESPIRATION" => [],
-	"DEPTH STRIDER " => [],
-    "AQUA AFFINITY" => [],
-	"SHARPNESS" => [],
+    "PROTECTION" => [1],
+    "FIRE PROTECTION" => [2],
+    "FEATHER FALLING" => [3],
+    "BLAST PROTECTION" => [4],
+	"PROJECTILE PROTECTION" => [5],
+	"THORNS" => [6],
+	"RESPIRATION" => [7],
+	"DEPTH STRIDER " => [8],
+    "AQUA AFFINITY" => [9],
+	"SHARPNESS" => [10],
     "SMITE" => [],
-    "BANE OF ARTHROPODS" => [],
+    "BANE OF ARTHROPODS" => [11],
     "KNOCKBACK" => [],
-	"FIRE_ASPECT" => [],
-	"LOOTING" => [],
-    "EFFICIENCY" => [],
-	"SILK TOUCH" => [],
-    "UNBREAKING" => [],
-    "FORTUNE" => [],
-    "POWER" => [],
-	"PUNCH" => [],
-	"FLAME" => [],
-	"INFINITY" => [],
-	"LUCK_OF_THE_SEA" => [],
-    "LURE" => [],
-	"FROST_WALKER" => [],
-    "MENDING" => []
+	"FIRE_ASPECT" => [12],
+	"LOOTING" => [13],
+    "EFFICIENCY" => [14],
+	"SILK TOUCH" => [15],
+    "UNBREAKING" => [16],
+    "FORTUNE" => [17],
+    "POWER" => [18],
+	"PUNCH" => [19],
+	"FLAME" => [20],
+	"INFINITY" => [21],
+	"LUCK_OF_THE_SEA" => [22],
+    "LURE" => [23],
+	"FROST_WALKER" => [24],
+    "MENDING" => [25]
   ];
   public function onEnable(){
         $this->getLogger()->info("Enchant GUI has been  enabled");

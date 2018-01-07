@@ -16,7 +16,7 @@ use onebone\economyapi\EconomyAPI;
 
 class Main extends PluginBase implements Listener{
   
-  const COMMAND_NAME = "enchantui";
+  const COMMAND_NAME = "eshop";
   const FORM_API = "FormAPI";
  public $prices = [
     "EXIT" => [0],

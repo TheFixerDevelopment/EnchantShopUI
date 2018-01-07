@@ -1,9 +1,9 @@
-name: EnchantUI
+name: EnchantGUI
 main: VCraftMCPE\Main
-version: 0.0.1
+version: 1.0.0-B1
 api: [3.0.0-ALPHA10]
-author: VCraft
+author: VMPE Development Team
 
 commands:
- enchantui:
+ enchant:
   description: "buy enchantments"

@@ -122,8 +122,8 @@ class Main extends PluginBase implements Listener{
             }
         });
 	  foreach($this->Enchants as $name => $price){
- -          $form->addButton($name);
- -         }
+           $form->addButton($name);
+         }
         $form->sendToPlayer($player);
   }
   public function ShopForm( $player, $id){
